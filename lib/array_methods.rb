@@ -22,11 +22,9 @@ end
 
 def find_min_value(array)
   x = array[0]
-  while counter < array.length
-    if array[counter] < array[counter-1]
-      number = array[counter]
-    end
-    counter += 1
+  array.length.times do |index|
+    if array[index] < x 
+      x = array[index]
   end
-  number
+  x
 end
